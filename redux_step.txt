@@ -1,0 +1,27 @@
+References:
+- Redux For Beginners | React Redux Tutorial by Dev Ed https://youtu.be/CVpUuw9XSjY
+
+1. Create React app:
+    $ npx create-react-app app_name
+    $ cd app_name
+
+2. Install redux & react-redux:
+    $ npm i redux react-redux
+
+3. Create reducers on ./src/reducers
+    - Every single reducer in 1 js file: reducer1.js, reducer2.js ... etc
+    - Create combineReducer js file: combiReducer.js to make all things easier
+
+4. Go to ./src/index.js
+    - Create redux store with combineReducer as its param
+    - Insert <App/> inside <Provider></Provider> from react-redux
+
+5. State global dapat diakses di App.js
+    - import useSelector from react-redux, create variable!
+    - State dapat diakses di komponen manapun
+
+6. Bagaimana cara mengakses action? Create actions on ./src/actions
+
+7. Go to App.js again
+   - Import action di App.js
+   - import useDispatch from react-redux
